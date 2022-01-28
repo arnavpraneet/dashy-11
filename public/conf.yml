@@ -1,47 +1,218 @@
 ---
 # Page meta info, like heading, footer text and nav links
+appConfig:
+  theme: colorful
+  layout: auto
+  iconSize: medium
+  language: en
+  auth: {}
 pageInfo:
   title: Dashy
   description: Welcome to your new dashboard!
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
-appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+    - title: Documentation
+      path: https://dashy.to/docs
+  footerText: ''
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
+  - name: Getting Started
+    icon: fas fa-rocket
+    items:
+      - title: Dashy Live
+        description: Development a project management links for Dashy
+        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+        url: https://live.dashy.to/
+        target: newtab
+        id: 0_1481_dashylive
+      - title: GitHub
+        description: Source Code, Issues and Pull Requests
+        url: https://github.com/lissy93/dashy
+        icon: favicon
+        id: 1_1481_github
+      - title: Docs
+        description: Configuring & Usage Documentation
+        provider: Dashy.to
+        icon: far fa-book
+        url: https://dashy.to/docs
+        id: 2_1481_docs
+      - title: Showcase
+        description: See how others are using Dashy
+        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+        icon: far fa-grin-hearts
+        id: 3_1481_showcase
+      - title: Config Guide
+        description: See full list of configuration options
+        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+        icon: fas fa-wrench
+        id: 4_1481_configguide
+      - title: Support
+        description: Get help with Dashy, raise a bug, or get in contact
+        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
+        icon: far fa-hands-helping
+        id: 5_1481_support
+  - name: Media
+    icon: fas fa-video
+    displayData:
+      sortBy: default
+      rows: '1'
+      cols: '1'
+      collapsed: 'false'
+      hideForGuests: 'false'
+    items:
+      - title: Jellyfin
+        description: Media Server
+        icon: >-
+          https://pbs.twimg.com/profile_images/1092692685020905472/Pi3hzoPi_400x400.jpg
+        url: 192.168.1.36:8096
+        target: newtab
+        id: 0_480_jellyfin
+      - title: Netflix
+        description: Netflix
+        icon: favicon
+        url: https://netflix.com
+        target: newtab
+        id: 1_480_netflix
+      - title: PrimeVideo
+        description: Prime Video
+        icon: https://img.icons8.com/color/48/000000/amazon-prime-video.png
+        url: https://primevideo.com
+        target: newtab
+        id: 2_480_primevideo
+      - title: Disney+Hotstar
+        description: Disney and Hotstar
+        icon: https://img.icons8.com/color/48/000000/hotstar.png
+        url: https://hotstar.com/in
+        target: newtab
+        id: 3_480_disneyhotstar
+  - name: Server
+    icon: fas fa-server
+    displayData:
+      sortBy: default
+      rows: '1'
+      cols: '1'
+      collapsed: 'false'
+      hideForGuests: 'false'
+    items:
+      - title: Portainer
+        description: Docker Manager
+        icon: hl-portainer
+        url: http://192.168.1.36:9000/
+        target: newtab
+        id: 0_631_portainer
+      - title: Pi-Hole
+        description: Adblocker
+        icon: hl-pihole
+        url: http://192.168.1.32/admin/
+        target: newtab
+        id: 1_631_pihole
+      - title: NextCloudPi
+        description: Config for NextCloud
+        icon: hl-nextcloud
+        url: 192.168.1.36:4443
+        target: newtab
+        id: 2_631_nextcloudpi
+      - title: Sonarr
+        description: TV Downloader
+        icon: hl-sonarr
+        url: http://192.168.1.36:8989/
+        target: newtab
+        id: 3_631_sonarr
+      - title: Radarr
+        description: Movie Downloader
+        icon: hl-radarr
+        url: http://192.168.1.36:8989/
+        target: newtab
+        id: 4_631_radarr
+      - title: qBittorrent
+        description: Torrent Client
+        icon: hl-qbittorrent
+        url: http://192.168.1.36:15080/
+        target: newtab
+        id: 5_631_qbittorrent
+      - title: Jackett
+        description: Indexer
+        icon: hl-jackett
+        url: http://192.168.1.36:9117/UI/Dashboard#
+        target: newtab
+        id: 6_631_jackett
+      - title: Speedtest
+        description: Internet Speedtest
+        icon: https://img.icons8.com/nolan/64/ookla-speedtest.png
+        url: http://192.168.1.36:8765
+        target: newtab
+        id: 7_631_speedtest
+  - name: Data
+    icon: fas fa-database
+    displayData:
+      sortBy: default
+      rows: '1'
+      cols: '1'
+      collapsed: 'false'
+      hideForGuests: 'false'
+    items:
+      - title: NextCloud
+        description: Personal Drive
+        icon: hl-nextcloud
+        url: http://192.168.1.36:8443
+        target: newtab
+        id: 0_378_nextcloud
+      - title: BookStack
+        description: Personal Wiki
+        icon: hl-bookstack
+        url: http://192.168.1.36:6875
+        target: newtab
+        id: 1_378_bookstack
+  - name: Knowledge
+    icon: fas fa-book
+    displayData:
+      sortBy: default
+      rows: '1'
+      cols: '1'
+      collapsed: 'false'
+      hideForGuests: 'false'
+    items:
+      - title: Wikipedia
+        description: The Free Encyclopedia
+        icon: https://img.icons8.com/color/144/000000/wikipedia-logo.png
+        url: https://en.wikipedia.org/wiki/Main_Page
+        target: newtab
+        id: 0_928_wikipedia
+      - title: KhanAcademy
+        description: Learning for everyone
+        icon: https://img.icons8.com/color/480/000000/khan-academy.png
+        url: https://www.khanacademy.org/profile/me/courses
+        target: newtab
+        id: 1_928_khanacademy
+      - title: WolframAlpha
+        description: Knowledge Engine
+        icon: https://img.icons8.com/fluency/240/000000/wolfram-alpha.png
+        url: https://www.wolframalpha.com/
+        target: newtab
+        id: 2_928_wolframalpha
+      - title: Pocket
+        description: Bookmarks
+        icon: >-
+          https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/000000/external-pocket-when-you-find-something-you-want-to-view-later-logo-color-tal-revivo.png
+        url: https://getpocket.com/my-list
+        target: newtab
+        id: 3_928_pocket
+  - name: COVID
+    icon: fas fa-biohazard
+    displayData:
+      sortBy: default
+      rows: '1'
+      cols: '1'
+      collapsed: 'false'
+      hideForGuests: 'false'
+    items: null
+    widgets:
+      - type: covid-stats
+        options:
+          showChart: 'true'
+          showCountries: 'true'
+          countries:
+            - IND
+        id: 0_373_covidstats
+
   
