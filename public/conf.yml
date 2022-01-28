@@ -207,12 +207,5 @@ sections:
       hideForGuests: 'false'
     items: null
     widgets:
-      - type: covid-stats
-        options:
-          showChart: 'true'
-          showCountries: 'true'
-          countries:
-            - IND
-        id: 0_373_covidstats
-
+      - type: system-info
   
