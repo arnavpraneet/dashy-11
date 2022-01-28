@@ -198,14 +198,14 @@ sections:
         target: newtab
         id: 3_928_pocket
   - name: COVID
-    icon: fas fa-biohazard
+    icon: fas fa-computer
     displayData:
       sortBy: default
       rows: '1'
       cols: '1'
       collapsed: 'false'
       hideForGuests: 'false'
-    items: null
+    items:
     widgets:
       - type: system-info
   
