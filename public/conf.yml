@@ -86,30 +86,6 @@ sections:
         url: http://192.168.1.36:4443
         target: newtab
         id: 2_631_nextcloudpi
-      - title: Sonarr
-        description: TV Downloader
-        icon: hl-sonarr
-        url: http://192.168.1.36:8989/
-        target: newtab
-        id: 3_631_sonarr
-      - title: Radarr
-        description: Movie Downloader
-        icon: hl-radarr
-        url: http://192.168.1.36:8989/
-        target: newtab
-        id: 4_631_radarr
-      - title: qBittorrent
-        description: Torrent Client
-        icon: hl-qbittorrent
-        url: http://192.168.1.36:15080/
-        target: newtab
-        id: 5_631_qbittorrent
-      - title: Jackett
-        description: Indexer
-        icon: hl-jackett
-        url: http://192.168.1.36:9117/UI/Dashboard#
-        target: newtab
-        id: 6_631_jackett
       - title: Speedtest
         description: Internet Speedtest
         icon: https://img.icons8.com/nolan/64/ookla-speedtest.png
@@ -184,3 +160,36 @@ sections:
       - type: xkcd-comic
         options:
           comic: latest
+  - name: Downloads
+    icon: fas fa-download
+    displayData:
+      sortBy: default
+      rows: '1'
+      cols: '1'
+      collapsed: 'false'
+      hideForGuests: 'false'
+    items:
+      - title: Sonarr
+        description: TV Downloader
+        icon: hl-sonarr
+        url: http://192.168.1.36:8989/
+        target: newtab
+        id: 3_631_sonarr
+      - title: Radarr
+        description: Movie Downloader
+        icon: hl-radarr
+        url: http://192.168.1.36:7878/
+        target: newtab
+        id: 4_631_radarr
+      - title: qBittorrent
+        description: Torrent Client
+        icon: hl-qbittorrent
+        url: http://192.168.1.36:15080/
+        target: newtab
+        id: 5_631_qbittorrent
+      - title: Jackett
+        description: Indexer
+        icon: hl-jackett
+        url: http://192.168.1.36:9117/UI/Dashboard#
+        target: newtab
+        id: 6_631_jackett
