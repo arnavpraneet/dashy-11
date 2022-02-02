@@ -73,9 +73,11 @@ sections:
       - title: Portainer
         description: Docker Manager
         icon: hl-portainer
-        url: http://192.168.1.36:9000/
+        url: https://port.paxbase.ml
         target: newtab
         id: 0_631_portainer
+        statusCheck: true
+        statusCheckInterval: 600        
       - title: Pi-Hole
         description: Adblocker
         icon: hl-pihole
@@ -106,15 +108,19 @@ sections:
       - title: NextCloud
         description: Personal Drive
         icon: hl-nextcloud
-        url: https://192.168.1.36:8443
+        url: https://drive.paxbase.ml
         target: newtab
         id: 0_378_nextcloud
+        statusCheck: true
+        statusCheckInterval: 600        
       - title: BookStack
         description: Personal Wiki
         icon: hl-bookstack
-        url: http://192.168.1.36:6875
+        url: https://books.paxbase.ml
         target: newtab
         id: 1_378_bookstack
+        statusCheck: true
+        statusCheckInterval: 600        
   - name: Knowledge
     icon: fas fa-book
     displayData:
