@@ -7,12 +7,12 @@ appConfig:
   language: en
   auth: {}
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: PaxBase
+  description: Jai Hind!
   navLinks:
     - title: GitHub
-      path: https://github.com/Lissy93/dashy
-    - title: Documentation
+      path: https://github.com/arnavpraneet/dashy-11
+    - title: Docs
       path: https://dashy.to/docs
   footerText: ''
 sections:
@@ -38,9 +38,11 @@ sections:
         description: Media Server
         icon: >-
           https://pbs.twimg.com/profile_images/1092692685020905472/Pi3hzoPi_400x400.jpg
-        url: http://192.168.1.36:8096
+        url: https://flix.paxbase.ml
         target: newtab
         id: 0_480_jellyfin
+        statusCheck: true
+        statusCheckInterval: 600
       - title: Netflix
         description: Netflix
         icon: favicon
