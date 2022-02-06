@@ -32,6 +32,13 @@
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/arnavpraneet">
+            <img src="https://avatars.githubusercontent.com/u/30770259?v=4" width="80;" alt="arnavpraneet"/>
+            <br />
+            <sub><b>Arnav Praneet</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/snyk-bot">
             <img src="https://avatars.githubusercontent.com/u/19733683?v=4" width="80;" alt="snyk-bot"/>
             <br />
@@ -44,27 +51,20 @@
             <br />
             <sub><b>Kashif Sohail</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/evroon">
             <img src="https://avatars.githubusercontent.com/u/11857441?v=4" width="80;" alt="evroon"/>
             <br />
             <sub><b>Erik Vroon</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/UrekD">
             <img src="https://avatars.githubusercontent.com/u/38784343?v=4" width="80;" alt="UrekD"/>
             <br />
             <sub><b>UrekD</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/arnavpraneet">
-            <img src="https://avatars.githubusercontent.com/u/30770259?v=4" width="80;" alt="arnavpraneet"/>
-            <br />
-            <sub><b>Arnav Praneet</b></sub>
         </a>
     </td>
     <td align="center">
